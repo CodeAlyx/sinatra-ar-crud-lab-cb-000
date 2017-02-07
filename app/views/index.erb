@@ -1,0 +1,6 @@
+<h1><em>Posts: </em></h1>
+<ul>
+  <% Post.all.each do |post| %>
+    <li><a href='/posts/<%= post.id %>'><%= post.name %></a></li>
+  <% end %>
+</ul>
